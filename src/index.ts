@@ -1,7 +1,7 @@
 import { Box, DSLElement, TypeEnum } from './Node';
 import { pluginManager, nodeManager } from './Core';
 import { PluginBaseType } from './types';
-
+// 代码编辑器: https://ace.c9.io/#nav=about&api=editor
 export const render = (dsl: DSLElement) => {
   const { type } = dsl;
 
