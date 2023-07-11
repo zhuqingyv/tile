@@ -2,7 +2,7 @@ import { BoxType, DSLViewElement } from "./types/view";
 import { Render } from "./Core";
 
 export class Box extends Render {
-  children: DSLViewElement[];
+  children!: DSLViewElement[];
 
   constructor(options: BoxType) {
     super(options);

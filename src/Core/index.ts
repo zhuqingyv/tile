@@ -1,7 +1,7 @@
-import { BaseManager, PluginManager } from "./Manager";
+import { NodeManager, PluginManager } from "./Manager";
 
-export const manager = new BaseManager();
+export const nodeManager = new NodeManager();
 export const pluginManager = new PluginManager();
 
-export { BaseManager } from './Manager';
+export { NodeManager } from './Manager';
 export { PluginManager } from './Manager'

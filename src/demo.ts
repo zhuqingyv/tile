@@ -10,8 +10,7 @@ const tile = new Tile(dsl);
 
 const BoxPlugin = {
   type: 'Box',
-  create(instance) {},
-  render(instance) {}
+  onCreated(instance) {},
 };
 
 tile.use(BoxPlugin);

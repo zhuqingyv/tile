@@ -1,7 +1,7 @@
 import { PoolType } from "../types";
 import { CreateMethod, DestroyMethod } from "../types";
 
-class BaseManager {
+class NodeManager {
   pool: PoolType = {};
 
   create: CreateMethod = (instance, callback) => {
@@ -27,4 +27,4 @@ class BaseManager {
   };
 };
 
-export default BaseManager;
+export default NodeManager;

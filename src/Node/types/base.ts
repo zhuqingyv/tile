@@ -35,17 +35,17 @@ export interface EventsType {
   [key: string]: ScriptType;
 };
 
-export interface ScriptType extends BaseType {
-  type: TypeEnum.SCRIPT;
-  value: string;
-};
-
 export interface DataType extends BaseType {
   type: TypeEnum.DATA;
   // 这里可以指向另外一个数据源，可以是动态数据源
   value: string | number | DataType | ScriptType | {
     [key: string]: string | number;
   };
+};
+
+export interface ScriptType extends BaseType {
+  type: TypeEnum.SCRIPT;
+  value: string;
 };
 
 export interface BaseType {
@@ -58,7 +58,7 @@ export interface BaseType {
 
 export interface FetchType extends BaseType {
   type: TypeEnum.FETCH;
-  params?: DataType | FetchType;
+  params?: DataType | ScriptType;
   value?: DataType | ScriptType;
 };
 

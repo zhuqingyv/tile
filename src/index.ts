@@ -1,5 +1,5 @@
 import { Box, DSLElement, TypeEnum } from './Node';
-import { pluginManager } from './Core';
+import { pluginManager, nodeManager } from './Core';
 import { PluginBaseType } from './types';
 
 export const render = (dsl: DSLElement) => {
@@ -25,6 +25,8 @@ export const render = (dsl: DSLElement) => {
 
 class Tile {
   dsl: DSLElement;
+  nodeManager = nodeManager;
+  pluginManager = pluginManager;
 
   constructor(dsl: DSLElement) {
     this.dsl = dsl;

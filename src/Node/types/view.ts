@@ -8,9 +8,9 @@ export interface BoxType extends RenderType {
   children?: DSLViewElement[];
 };
 
-export interface Text extends RenderType {
+export interface TextType extends RenderType {
   type: TypeEnum.TEXT;
-  value: string;
+  value: string | DataType | ScriptType;
   numberOfLine: number;
 };
 

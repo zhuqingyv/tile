@@ -19,9 +19,9 @@ class Base {
 
     this.type = type;
     this.id = id;
-    this.name = name;
-    this.script = script;
-    this.data = data;
+    if (!!name) this.name = name;
+    if (script) this.script = script;
+    if (data) this.data = data;
 
     this.created();
   };
